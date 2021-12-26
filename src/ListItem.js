@@ -1,11 +1,11 @@
-import React, { Component, Fragments } from "react";
-class ListItem extends Component {
+import React from "react";
+class ListItem extends React.Component {
   render() {
-    const { item } = this.props.item;
+    const item = this.props.item;
     return (
-      <Fragments>
+      <React.Fragment>
         <li>{item}</li>
-      </Fragments>
+      </React.Fragment>
     );
   }
 }

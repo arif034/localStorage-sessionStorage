@@ -21,11 +21,11 @@ class App extends Component {
     this.setState({
       items: newList
     });
-    alert(newList);
   };
 
   render() {
     const listItem = this.state.items.map((item) => <ListItem item={item} />);
+    console.log(listItem);
     return (
       <div className="App">
         <input
